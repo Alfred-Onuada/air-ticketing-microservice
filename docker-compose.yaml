@@ -1,0 +1,21 @@
+version: '2.7'
+
+services:
+
+  admin-api:
+    build:
+      context: '.'
+      dockerfile: './admin/Dockerfile'
+    ports:
+      - '3001:3001'
+    volumes:
+      - './admin:/app'
+
+  frontend:
+    build:
+      context: '.'
+      dockerfile: './booking/Dockerfile' 
+    ports:
+      - '3002:3002'
+    volumes:
+      - './booking:/app'
