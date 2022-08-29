@@ -2,7 +2,7 @@ FROM node:16
 
 LABEL service="Admin service"
 
-WORKDIR /app/admin
+WORKDIR /admin/app
 
 COPY package*.json ./
 

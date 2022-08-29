@@ -5,7 +5,7 @@ app.use(compression());
 
 const PORT = process.env.PORT || 3001
 
-app.get('/', () => {
+app.get('/', (req, res) => {
   res.json({ message: 'Hurray!! admin service works' });
 })
 

@@ -2,7 +2,7 @@ FROM node:16
 
 LABEL service="Booking service"
 
-WORKDIR /app/booking
+WORKDIR /booking/app
 
 COPY package*.json ./
 
