@@ -7,27 +7,31 @@
   <title>Book your next flight</title>
 
   <link rel="stylesheet" href="styles.css">
-  <script src="index.js"></script>
 </head>
 <body>
   
-  <form>
+  <form id="bookingForm">
+    <div class="msg hide" id="msg">
+      <h4 id="msgText"></h4>
+    </div>
     <h1>Fly in Peace</h1>
     <div class="form-group">
       <label for="from">From:</label>
       <input type="text" name="from" id="from" placeholder="Addis ababa">
     </div>
     <div class="form-group">
-      <label for="to">Destination</label>
+      <label for="to">Destination:</label>
       <input type="text" name="to" id="to" placeholder="Johannesburg">
     </div>
     <div class="form-group">
-      <label for="cost">Price</label>
-      <input type="number" name="cost" id="cost" disabled>
+      <label for="price">Price:</label>
+      <input type="number" name="price" id="price" disabled>
     </div>
 
     <button class="btn">Book</button>
   </form>
 
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
